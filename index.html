@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Meetape</title>
+    <link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
     <header>
-        <img src="#" alt="Logo Meetape">
+        <img src="public/imagens/Logomeetape.png" alt="Logo Meetape">
         <nav>
             <a href="index.html">O Evento</a>
             <a href="#">Palestrantes</a>
@@ -18,25 +19,27 @@
     <main>
         <section>
             <div>
-                <h4>Vem <strong>Participar!</strong></h4>
-                <h1>Um evento para Devs e intusiastas</h1>
-                <p>Local: IFSP - Av. João Olímpio de Oliveira, 1561 - Vila Asem, Itapetininga - SP, 18202-000 </p>
+                <h3 id="participar">Vem <strong>Participar!</strong></h3>
+                <h1 id="evento">Um evento para <br> Devs e intusiastas</h1>
+                <p id="local">Local: IFSP - Av. João Olímpio de Oliveira, 1561 - Vila Asem, Itapetininga - SP, 18202-000</p>
                 <div id="data">
-                    <h2>07</h2>
+                    <h2 id="dia">07</h2>
                     <div class="barra"></div>
-                    <div>
-                        <h3>Agosto</h3>
-                        <h4><strong>2022</strong></h4>
+                    <div id="data2">
+                        <h3 id="mes">Agosto</h3>
+                        <h3 id="ano">2022</h3>
                     </div>
                 </div>
-                <p>13:00h ás 17:00h</p>
+                <p id="horario">13:00h ás 17:00h</p>
                 <a href="#" class="botao">Inscreva-se</a>
             </div>
-            <img src="#" alt="tela programação">
+            <img src="public/imagens/iluhomem-programando.png" alt="tela programação">
         </section>
         <section>
-            <h4>Bora trocar <strong>Conhecimento</strong></h4>
-            <h2>Diversas palestras sobre Tecnologia e Desenvolvimento</h2>
+            <div>
+                <h3>Bora trocar <strong>Conhecimento</strong></h3>
+                <h2>Diversas palestras sobre Tecnologia e Desenvolvimento</h2>
+            </div>
             <div class="slide">
 
             </div>
@@ -45,10 +48,12 @@
             <div class="slide">
 
             </div>
-            <h4>Ajudaram a tornar <strong>Possível!</strong></h4>
-            <h2>Sem o Apoio desse pessoal o evento não aconteceria</h2>
+            <div>
+                <h3>Ajudaram a tornar <strong>Possível!</strong></h3>
+                <h2>Sem o Apoio desse pessoal o evento não aconteceria</h2>
+            </div>
         </section>
-        <section>
+        <section id="caixa">
             <h2>Bora ficar por dentro de todas as atualizações</h2>
             <div>
                 <input type="text" name="email">
