@@ -17,11 +17,11 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div>
+        <section id="chamada">
+            <div id="info">
                 <h3 id="participar">Vem <strong>Participar!</strong></h3>
                 <h1 id="evento">Um evento para <br> Devs e intusiastas</h1>
-                <p id="local">Local: IFSP - Av. João Olímpio de Oliveira, 1561 - Vila Asem, Itapetininga - SP, 18202-000</p>
+                <p id="local">Local: IFSP - Av. João Olímpio de Oliveira, 1561 - Vila<br> Asem, Itapetininga - SP, 18202-000</p>
                 <div id="data">
                     <h2 id="dia">07</h2>
                     <div class="barra"></div>
@@ -31,9 +31,13 @@
                     </div>
                 </div>
                 <p id="horario">13:00h ás 17:00h</p>
-                <a href="#" class="botao">Inscreva-se</a>
+                <a href="#" id="botao-link">
+                    <div class="botao">
+                    Inscreva-se <img src="public/imagens/arrow-forward-circle-outline.svg" alt="" class="setinha">
+                    </div>
+                </a>
             </div>
-            <img src="public/imagens/iluhomem-programando.png" alt="tela programação">
+            <img src="public/imagens/iluhomem-programando.png" alt="tela programação" id="homem">
         </section>
         <section>
             <div>
@@ -41,7 +45,9 @@
                 <h2>Diversas palestras sobre Tecnologia e Desenvolvimento</h2>
             </div>
             <div class="slide">
-
+                <div id="slide1">
+                    <h2>Nome</h2>
+                </div>
             </div>
         </section>
         <section>
@@ -54,10 +60,14 @@
             </div>
         </section>
         <section id="caixa">
-            <h2>Bora ficar por dentro de todas as atualizações</h2>
-            <div>
-                <input type="text" name="email">
-                <a href="#" class="botao" type="submit">Quero Receber</a>
+            <h2 id="att">Bora ficar por dentro de<br> todas as atualizações</h2>
+            <div id="emails">
+                <input type="text" name="email" placeholder="Seu Email">
+                <a href="#" id="botao-link" type="submit">
+                    <div class="botao">
+                    Quero Receber <img src="public/imagens/arrow-forward-circle-outline.svg" alt="" class="setinha">
+                    </div>
+                </a>
             </div>
         </section>
     </main>
