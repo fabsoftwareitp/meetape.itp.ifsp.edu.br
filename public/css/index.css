@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #313131;
+    background-color: #161616;
+    background-image: url(../imagens/svgexport-1.svg);
 }
 
 header {
@@ -154,6 +155,67 @@ header nav a {
     height: 25px;
 }
 
+#slides {
+    display: flex;
+    margin-left: 7%;
+    margin-top: 50px;
+    justify-content: left;
+}
+
+#conhecimento {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+#palestras {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    color: #FAFAFA;
+    letter-spacing: 0.1em;
+}
+
+.slide {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 20px;
+}
+
+#slides2 {
+    display: flex;
+    justify-content: right;
+    margin-right: 7%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#ajudaram {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+#apoio {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FAFAFA;
+}
+
+
 #caixa {
     margin-bottom: 100px;
 }
@@ -195,7 +257,7 @@ input::placeholder {
 
 footer {
     text-align: center;
-    background-color: #242026;
+    background-color: #242026b9;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
