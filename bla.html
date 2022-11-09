@@ -12,25 +12,7 @@
             width: 900px;
         }
 
-        .slides-box {
-            padding: 20px 0;
-            background-color: green;
-            display: flex;
-            gap:40px;
-            overflow: hidden;
-            width: 900px;
-            scroll-snap-type: x proximity;
-            scroll-behavior: smooth;
-        }
-
-        .slide {
-            background-color: purple;
-            width: 300px;
-            height: 200px;
-            flex: 0 0 300px;
-            scroll-snap-align: start;
-        }
-
+     
     </style>
 
 </head>
@@ -52,29 +34,5 @@
         </div>
     </div>
 
-
-    <script>
-
-        document.querySelectorAll(".control").forEach(function(element){
-
-            element.addEventListener('click' , function(e){
-
-                let slidesBox = document.querySelector('.slides-box');
-                let max = slidesBox.scrollLeftMax;
-                let actual = slidesBox.scrollLeft;
-
-                let datapost = parseInt(e.target.dataset.pos);
-
-                if(actual >= 0 && actual <= max) {
-                    slidesBox.scrollLeft = actual + (datapost);
-                } else  {
-                    slidesBox.scrollLeft = 0;
-                } 
-            });
-
-        });
-
-  
-    </script>
 </body>
 </html>

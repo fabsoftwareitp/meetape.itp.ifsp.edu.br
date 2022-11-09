@@ -49,8 +49,8 @@
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
-                <div class="slides">
-                    <div class="mySlides fade">
+                <div class="slides-box">
+                    <div class="slide">
                         <div class="imagem">
                             <img src="public/imagens/Ellipse 63.png" alt="">
                             <div class="nome">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 
-                    <div class="mySlides fade">
+                    <div class="slide">
                         <div class="imagem">
                             <img src="public/imagens/Ellipse 63.png" alt="">
                             <div class="nome">
@@ -78,7 +78,7 @@
                         </div>                
                     </div>
                 
-                    <div class="mySlides fade">
+                    <div class="slide">
                         <div class="imagem">
                             <img src="public/imagens/Ellipse 63.png" alt="">
                             <div class="nome">
@@ -94,8 +94,8 @@
                 </div>
               
                 <div class="botoes">
-                    <a class="prev" onclick="plusSlides(-1)"><img src="public/imagens/chevron-back-circle-outline.svg" alt="" style="width: 35px; color: white;"></a>
-                    <a class="next" onclick="plusSlides(1)"><img src="public/imagens/chevron-forward-circle-outline.svg" alt="" style="width: 35px; color: white;"></a>
+                    <button id="next" class="control" data-pos="+300">vai</button>
+                    <button id="prev" class="control" data-pos="-300"> volta</button>
                 </div>
               </div>
         </section>
@@ -127,3 +127,24 @@
     </footer>
 </body>
 </html>
+
+<script>
+    document.querySelectorAll(".control").forEach(function(element){
+
+element.addEventListener('click' , function(e){
+
+    let slidesBox = document.querySelector('.slides-box');
+    let max = slidesBox.scrollLeft;
+    let actual = slidesBox.scrollLeft;
+
+    let datapost = parseInt(e.target.dataset.pos);
+
+    if(actual >= 0 && actual <= max) {
+        slidesBox.scrollLeft = actual + (datapost);
+    } else  {
+        slidesBox.scrollLeft = 0;
+    } 
+});
+
+});
+</script>
