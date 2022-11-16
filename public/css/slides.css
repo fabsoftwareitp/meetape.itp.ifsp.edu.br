@@ -5,13 +5,17 @@
 #slides {
     display: flex;
     margin-top: 50px;
+    margin-left: 390px;
 }
 
 
 .slideshow-container {
-    margin-left: 60px;
+    margin-left: 150px;
 }
 
+.slideshow-container-right {
+    margin-right: 150px;
+}
 
 .imagem {
     display: flex;
@@ -73,16 +77,6 @@
     margin-top: 15px;
 }
 
-.prev, .next {
-  cursor: pointer;
-  color: white;
-  margin: 10px;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-
-}
 
 .slides-box {
     padding: 20px 0;
@@ -94,9 +88,38 @@
     scroll-behavior: smooth;
 }
 
+.slides-box2 {
+    padding: 20px 0;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    width: 900px;
+    scroll-snap-type: x proximity;
+    scroll-behavior: initial;
+}
+
 .slide {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 270px;
     flex: 0 0 300px;
     scroll-snap-align: start;
+    background: linear-gradient(180deg, #8142F7 0%, #5602EE 100%);
+    box-shadow: 0px 2px 3px rgba(11, 11, 11, 0.3), 0px 6px 10px 4px rgba(7, 7, 7, 0.15);
+    border-radius: 10px;
+}
+
+.botoes {
+    text-align: center;
+    margin-left: 100px;
+}
+
+button {
+    width: auto;
+    cursor: pointer;
+    background-color: #e0c1c100;
+    border: 0px solid black;
+}
+
+.texto {
+    text-align: right;
 }

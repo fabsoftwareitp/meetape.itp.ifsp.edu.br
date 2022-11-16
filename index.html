@@ -94,20 +94,68 @@
                 </div>
               
                 <div class="botoes">
-                    <button id="next" class="control" data-pos="+300">vai</button>
-                    <button id="prev" class="control" data-pos="-300"> volta</button>
-                </div>
-              </div>
-        </section>
-        <section id="slides2">
-            <div class="slide">
-                <div id="slide1">
-                    <h2>Nome</h2>
+                    <button id="prev" class="control" data-pos="-300"><img src="public/imagens/chevron-circle-left.png" alt=""></button>
+                    <button id="next" class="control" data-pos="+300"><img src="public/imagens/chevron-circle-right.png" alt=""></button>
                 </div>
             </div>
-            <div>
-                <h3 id="ajudaram">Ajudaram a tornar <strong>Possível!</strong></h3>
-                <h2 id="apoio">Sem o Apoio desse<br> pessoal o evento<br> não aconteceria</h2>
+        </section>
+        <section id="slides2">
+            
+            <div class="slideshow-container-right">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="slides-box2">
+                    <div class="slide">
+                        <div class="imagem">
+                            <img src="public/imagens/Ellipse 63.png" alt="">
+                            <div class="nome">
+                                <h3>Amanda Pires</h3>
+                                <p>Software engineer at IBM</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Gestão de dados</h4>
+                            <p>Com mais de 10 anos de experiencia passando por empresas como Microsoft , Loft e Google. Atualmente trabalha como Software Engineer na IBM</p>
+                        </div>
+                    </div>
+                
+                    <div class="slide">
+                        <div class="imagem">
+                            <img src="public/imagens/Ellipse 63.png" alt="">
+                            <div class="nome">
+                                <h3>Amanda Pires 2</h3>
+                                <p>Software engineer at IBM</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Gestão de dados</h4>
+                            <p>Com mais de 10 anos de experiencia passando por empresas como Microsoft , Loft e Google. Atualmente trabalha como Software Engineer na IBM</p>
+                        </div>                
+                    </div>
+                
+                    <div class="slide">
+                        <div class="imagem">
+                            <img src="public/imagens/Ellipse 63.png" alt="">
+                            <div class="nome">
+                                <h3>Amanda Pires 3</h3>
+                                <p>Software engineer at IBM</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Gestão de dados</h4>
+                            <p>Com mais de 10 anos de experiencia passando por empresas como Microsoft , Loft e Google. Atualmente trabalha como Software Engineer na IBM</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="botoes">
+                    <button id="next" class="control2" data-pos="-300"><img src="public/imagens/chevron-circle-left.png" alt=""></button>
+                    <button id="prev" class="control2" data-pos="+300"><img src="public/imagens/chevron-circle-right.png" alt=""></button>
+                </div>
+            </div>
+            <div class="texto">
+                <h3 id="conhecimento">Ajudaram a tornar <strong>Possível!</strong></h3>
+                <h2 id="palestras">Sem o Apoio desse<br> pessoal o evento<br> não aconteceria</h2>
             </div>
         </section>
         <section id="caixa">
@@ -131,9 +179,28 @@
 <script>
     document.querySelectorAll(".control").forEach(function(element){
 
+        element.addEventListener('click' , function(e){
+
+            let slidesBox = document.querySelector('.slides-box');
+            let max = slidesBox.scrollLeft;
+            let actual = slidesBox.scrollLeft;
+
+            let datapost = parseInt(e.target.dataset.pos);
+
+            if(actual >= 0 && actual <= max) {
+                slidesBox.scrollLeft = actual + (datapost);
+            } else  {
+                slidesBox.scrollLeft = 0;
+            } 
+        });
+
+    });
+
+    document.querySelectorAll(".control2").forEach(function(element){
+
 element.addEventListener('click' , function(e){
 
-    let slidesBox = document.querySelector('.slides-box');
+    let slidesBox = document.querySelector('.slides-box2');
     let max = slidesBox.scrollLeft;
     let actual = slidesBox.scrollLeft;
 
